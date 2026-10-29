@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winara Anggun Purnama | Portfolio</title>
+    <meta name="description" content="Portofolio Winara Anggun Purnama, mahasiswa Teknik Informatika Universitas Sulawesi Barat.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  
+    <style>
+        .floating-flower {
+            position: fixed;
+            bottom: -60px;
+            z-index: 999;
+            pointer-events: none;
+            user-select: none;
+            opacity: 0;
+            font-size: var(--flower-size, 25px);
+            animation: flowerFloat var(--flower-speed, 12s) linear infinite;
+            animation-delay: var(--flower-delay, 0s);
+            filter: drop-shadow(0 2px 5px rgba(231, 143, 179, 0.2));
+            will-change: transform, opacity;
+        }
+
+        @keyframes flowerFloat {
+            0% {
+                transform: translate3d(0, 0, 0) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.85;
+            }
+
+            50% {
+                transform: translate3d(35px, -55vh, 0) rotate(180deg);
+                opacity: 0.8;
+            }
+
+            90% {
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: translate3d(-25px, -115vh, 0) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .floating-flower {
+                font-size: 19px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .floating-flower {
+                display: none;
+                animation: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                winara<span>.</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Buka menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hi, I'm <span>Winara</span><br>
+                    Anggun Purnama.
+                </h1>
+
+                <h2 class="hero-subtitle">
+                    Informatics Engineering Student
+                </h2>
+
+                <p class="hero-description">
+                    Aku mahasiswa Teknik Informatika di Universitas
+                    Sulawesi Barat yang tertarik pada dunia teknologi,
+                    web development, dan UI/UX design. Aku senang
+                    belajar hal baru dan mengembangkan ide menjadi
+                    sesuatu yang bermanfaat.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore Projects <span>↗</span>
+                    </a>
+
+                    <a href="#about" class="btn btn-secondary">
+                        About Me
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    <span>✳</span>
+                    Learning something new every day.
+                </p>
+
+            </div>
+
+            <div class="hero-art">
+
+                <div class="profile-frame">
+
+                    <div class="photo-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <img
+                        src="assets/winara.jpeg"
+                        alt="Foto Winara Anggun Purnama"
+                        class="profile-photo">
+
+                    <div class="photo-caption">
+                        <span class="status-dot"></span>
+                        <span>hello, it's me!</span>
+                    </div>
+
+                </div>
+
+                <span class="float-bubble bubble-one">✳</span>
+                <span class="float-bubble bubble-two">&lt;/&gt;</span>
+                <span class="float-bubble bubble-three">♡</span>
+            </div>
+        </section>
+
+        <section class="section container" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+                <p>A little introduction about myself.</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">🌷</div>
+                <div class="about-content">
+                    <h3>Kenali aku yuk</h3>
+
+                    <p>
+                        Halo! Aku Winara Anggun Purnama, mahasiswa
+                        Program Studi Teknik Informatika di
+                        Universitas Sulawesi Barat.
+                    </p>
+
+                    <p>
+                        Aku sedang mengembangkan kemampuan di bidang
+                        pemrograman dan desain digital. Bagiku,
+                        belajar teknologi bukan hanya tentang menulis
+                        kode, tetapi juga tentang mencari solusi dan
+                        menciptakan sesuatu yang bermanfaat.
+                    </p>
+
+                    <div class="about-tags">
+                        <span>Creative Thinker</span>
+                        <span>Problem Solver</span>
+                        <span>Always Learning</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-area">
+                <div class="subheading">
+                    <span class="small-line"></span>
+                    <h3>Things I'm Learning</h3>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">&lt;/&gt;</div>
+                        <h4>HTML & CSS</h4>
+                        <p>Membangun dan menata tampilan website.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">{ }</div>
+                        <h4>Java</h4>
+                        <p>Belajar logika dan dasar pemrograman.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">✳</div>
+                        <h4>UI/UX Design</h4>
+                        <p>Merancang antarmuka yang nyaman digunakan.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">⌘</div>
+                        <h4>Web Development</h4>
+                        <p>Mengembangkan website secara bertahap.</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">A FEW THINGS I'VE WORKED ON</p>
+                    <h2>Featured <span>Projects</span></h2>
+                    <p>Beberapa proyek yang aku kerjakan selama belajar.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1 -->
+                    <article class="project-card">
+
+                        <div class="project-visual visual-purple">
+                            <span class="project-number">01 / DESIGN</span>
+                            <div class="mockup-window">
+
+                                <div class="mockup-dots">
+                                    <i></i><i></i><i></i>
+                                </div>
+
+                                <div class="mockup-body">
+                                    <span class="mockup-symbol">⌂</span>
+                                    <h3>KosUnsulbar</h3>
+                                    <p>Find your place.</p>
+                                    <div class="mockup-button">Explore Kos</div>
+                                </div>
+                            </div>
+                            <span class="visual-decoration">✳</span>
+
+                        </div>
+
+                        <div class="project-info">
+                            <p class="project-category">UI/UX DESIGN</p>
+
+                            <h3>KosUnsulbar</h3>
+
+                            <p class="project-description">
+                                Prototype aplikasi pencarian kos untuk
+                                mahasiswa Universitas Sulawesi Barat,
+                                dengan pilihan lokasi, harga, fasilitas,
+                                dan jenis kos.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Figma</span>
+                                <span>UI/UX</span>
+                                <span>Prototype</span>
+                            </div>
+
+                            <button class="project-link" data-project="kosunsulbar">
+                                View Project Details <span>↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-visual visual-pink">
+                            <span class="project-number">02 / DEVELOPMENT</span>
+                            <div class="mockup-window">
+
+                                <div class="mockup-dots">
+                                    <i></i><i></i><i></i>
+                                </div>
+
+                                <div class="mockup-body">
+                                    <span class="mockup-symbol">{ }</span>
+                                    <h3>Portal Akademik</h3>
+                                    <p>Student information.</p>
+                                    <div class="mockup-button">Learn More</div>
+                                </div>
+                            </div>
+                            <span class="visual-decoration">♡</span>
+                        </div>
+
+                        <div class="project-info">
+                            <p class="project-category">WEB DEVELOPMENT</p>
+
+                            <h3>Portal Akademik Sederhana</h3>
+
+                            <p class="project-description">
+                                Proyek latihan HTML dan PHP untuk
+                                menampilkan informasi serta mengelola
+                                formulir data mahasiswa.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>PHP</span>
+                            </div>
+
+                            <button class="project-link" data-project="portal">
+                                View Project Details <span>↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+            
+                    <article class="project-card">
+                        <div class="project-visual visual-sage">
+                            <span class="project-number">03 / PERSONAL</span>
+                            <div class="mockup-window">
+
+                                <div class="mockup-dots">
+                                    <i></i><i></i><i></i>
+                                </div>
+
+                                <div class="mockup-body">
+                                    <span class="mockup-symbol">&lt;/&gt;</span>
+                                    <h3>My Portfolio</h3>
+                                    <p>Code with creativity.</p>
+                                    <div class="mockup-button">Discover</div>
+                                </div>
+                            </div>
+                            <span class="visual-decoration">✦</span>
+                        </div>
+
+                        <div class="project-info">
+                            <p class="project-category">PERSONAL WEBSITE</p>
+
+                            <h3>Portofolio Pribadi</h3>
+
+                            <p class="project-description">
+                                Website pribadi untuk memperkenalkan diri,
+                                menampilkan proyek, dan menyediakan
+                                informasi kontak.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <button class="project-link" data-project="portfolio">
+                                View Project Details <span>↗</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Get in <span>Touch</span></h2>
+                <p>
+                    Punya pertanyaan atau ingin berdiskusi?
+                    Kamu bisa mengirim pesan melalui formulir ini.
+                </p>
+            </div>
+
+            <div class="contact-layout">
+
+                <div class="contact-info">
+
+                    <span class="contact-decoration">♡</span>
+
+                    <h3>Let's talk!</h3>
+
+                    <p>
+                        Aku terbuka untuk berdiskusi, berbagi ide,
+                        dan belajar hal baru bersama.
+                    </p>
+
+                    <div class="contact-detail">
+                        <div class="contact-icon">@</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Gunakan formulir di samping untuk menghubungi aku.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-icon">⌘</div>
+                        <div>
+                            <h4>Interest</h4>
+                            <p>Web Development & UI/UX Design</p>
+                        </div>
+                    </div>
+
+                    <p class="contact-note">
+                        Made with ♡ and a little bit of code.
+                    </p>
+
+                </div>
+
+                <form class="contact-form" id="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Nama kamu"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="nama@email.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subjek</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Tentang apa pesanmu?"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Tulis pesan kamu di sini..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        Send Message <span>↗</span>
+                    </button>
+
+                    <p
+                        id="form-status"
+                        class="form-status"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">win<span>.</span></a>
+
+            <p>
+                © <span id="current-year"></span> my fortopolio
+            </p>
+
+            <a href="#home" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <dialog class="project-modal" id="project-modal">
+        <div class="modal-content">
+
+            <button
+                type="button"
+                class="modal-close"
+                id="modal-close"
+                aria-label="Tutup">
+                ×
+            </button>
+
+            <p class="eyebrow">PROJECT DETAILS</p>
+            <h2 id="modal-title">Project Title</h2>
+            <p id="modal-description"></p>
+            <div class="project-tags" id="modal-tags"></div>
+
+        </div>
+
+    </dialog>
+
+    
+    <script src="script.js"></script>
+    <script>
+        (() => {
+            const flowers = ['💻', '🌷', '🛜', '🩷', '🔥', '✨'];
+
+            for (let i = 0; i < 18; i++) {
+                const flower = document.createElement('span');
+
+                flower.className = 'floating-flower';
+
+                flower.textContent =
+                    flowers[Math.floor(Math.random() * flowers.length)];
+
+                flower.style.left = Math.random() * 100 + 'vw';
+
+                flower.style.setProperty(
+                    '--flower-size',
+                    (18 + Math.random() * 17) + 'px'
+                );
+
+                flower.style.setProperty(
+                    '--flower-speed',
+                    (9 + Math.random() * 10) + 's'
+                );
+
+                flower.style.setProperty(
+                    '--flower-delay',
+                    (-Math.random() * 18) + 's'
+                );
+
+                document.body.appendChild(flower);
+            }
+        })();
+    </script>
+
+</body>
+</html>
